@@ -7,4 +7,4 @@ def doc2txt(path):
         completedText.append(pg.text)
     return '\n' .join(completedText)
 
-print (doc2txt('C://Users//kiran//Desktop//resume.docx'))
+# print (doc2txt('C://Users//kiran//Desktop//resume.docx'))
