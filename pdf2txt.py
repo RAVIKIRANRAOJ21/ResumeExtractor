@@ -10,4 +10,4 @@ def pdf2txt(path):
      return extractedtxt
      fl.close()
 
-print (pdf2txt('C://Users//kiran//Desktop//resume.pdf'))
+# print (pdf2txt('C://Users//kiran//Desktop//resume.pdf'))
