@@ -10,7 +10,7 @@ def email(path):
     pattern=re.compile(r'[a-zA-Z0-9-\.]+@+[a-zA-Z0-9-\.]*')
     matches=pattern.finditer(tmp)
     for i in matches:
-        j=i.group(0)
-    return j
+        i.group()
+    return i.group()
 
-print(email('C://Users//kiran//Desktop//resume.docx'))
+print('Email = ' + email('C://Users//kiran//Desktop//resume.docx'))
