@@ -1,10 +1,10 @@
 import  docx
 
-def rtd(fl):
-    doc = docx.Document(fl)
+def doc2txt(path):
+    doc = docx.Document(path)
     completedText = []
     for pg in doc.paragraphs:
         completedText.append(pg.text)
     return '\n' .join(completedText)
 
-print (rtd('C://Users//kiran//Desktop//resume.docx'))
+print (doc2txt('C://Users//kiran//Desktop//resume.docx'))
