@@ -8,7 +8,7 @@ def pdf2txt(path):
     for i in range(nop):
         pageObj = pdfReader.getPage(i)
         extractedtxt += pageObj.extractText()
-    return extractedtxt
     fl.close()
-
+    return extractedtxt
+    
 # print (pdf2txt('C://Users//kiran//Desktop//resume.pdf'))
