@@ -1,2 +1,5 @@
 python.docx
 PyPDF2
+nltk
+re
+string
