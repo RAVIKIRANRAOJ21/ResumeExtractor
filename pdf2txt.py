@@ -11,4 +11,5 @@ def pdf2txt(path):
     fl.close()
     return extractedtxt
     
+
 # print (pdf2txt('C://Users//kiran//Desktop//resume.pdf'))
