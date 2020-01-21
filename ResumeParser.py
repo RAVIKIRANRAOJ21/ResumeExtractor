@@ -24,6 +24,16 @@ def PhoneNo(path):
         Number = Number + '\n' + x
     return Number
 
-print(" Phone Numbers : " + PhoneNo('C://Users//kiran//Desktop//resume.pdf'))
+def experience(path):
+    my_text = doc2txt(path)
+#     my_text= pdf2txt(path)
+    pattern=re.compile(r"(\d+(?:-\d+)?\+?)\s*(years?)", re.I)
+    matches=pattern.finditer(my_text)
+    for x in matches:
+        return x.group()
 
-print('Email : ' + email('C://Users//kiran//Desktop//resume.docx'))
+print("Experience : " + experience('C://Users//kiran//Desktop//Resume3.pdf'))
+
+print("Phone Numbers : " + PhoneNo('C://Users//kiran//Desktop//resume.pdf'))
+
+print("Email : " + email('C://Users//kiran//Desktop//resume.docx'))
