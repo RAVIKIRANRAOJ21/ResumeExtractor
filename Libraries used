@@ -1,6 +1,6 @@
 INSTALLATION REQUIRED
 
-python.docx
+docx2txt
 PyPDF2
 nltk
 pandas
