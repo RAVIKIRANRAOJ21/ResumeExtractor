@@ -1,10 +1,7 @@
-import  docx
+import  docx2txt
 
 def doc2txt(path):
-    doc = docx.Document(path)
-    completedText = []
-    for pg in doc.paragraphs:
-        completedText.append(pg.text)
-    return '\n' .join(completedText)
+    Text = docx2tx.process(path)
+    return Text
 
 # print (doc2txt('C://Users//kiran//Desktop//resume.docx'))
