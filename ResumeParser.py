@@ -33,8 +33,10 @@ def experience(path):
     # my_text= pdf2txt(path)
     pattern=re.compile(r"(\d+(?:-\d+)?\+?)\s*(years?)", re.I)
     matches=pattern.finditer(my_text)
+    exp = 'None'
     for x in matches:
-        return x.group()
+        exp = x
+    return exp
 
 def Name(path):
     nlp = spacy.load('en_core_web_sm')
