@@ -37,7 +37,7 @@ def experience(path):
         return x.group()
 
 def Name(path):
-     nlp = spacy.load('en_core_web_sm')
+    nlp = spacy.load('en_core_web_sm')
     my_text = nlp(doc2txt(path))
     # my_text = nlp(pdf2txt(path))
     NAME_PATTERN = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
