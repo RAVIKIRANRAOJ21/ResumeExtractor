@@ -3,8 +3,9 @@ INSTALLATION REQUIRED
 python.docx
 PyPDF2
 nltk
-spacy
 pandas
+spacy
+and (python -m spacy download en_core_web_sm)
 
 BUILT-IN LIBRARIES
 
