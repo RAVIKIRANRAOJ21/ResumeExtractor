@@ -1,5 +1,12 @@
+INSTALLATION REQUIRED
+
 python.docx
 PyPDF2
 nltk
+spacy
+pandas
+
+BUILT-IN LIBRARIES
+
 re
-string
+os
